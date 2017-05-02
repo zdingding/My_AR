@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="open.ubii.com.myar.ARMapActivity">
+    <!-- 摄像层 -->
+    <FrameLayout
+        android:id="@+id/id_frameLayout_carmera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextureView
+            android:id="@+id/textureView_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:targetApi="ice_cream_sandwich" />
+    </FrameLayout>
+    <!-- 高德3D地图层 -->
+    <FrameLayout
+        android:id="@+id/frameLayout_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>
